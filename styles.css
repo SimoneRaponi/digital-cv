@@ -1,0 +1,293 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #2d2f33; /* Subtle dark background */
+    color: #e1e1e3; /* Soft white text for readability */
+}
+
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px 30px;
+    background: #383a3f; /* A slightly lighter shade for content contrast */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #e1e1e3; /* White border around the image */
+    margin: 0 auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e1e1e3;
+    padding-bottom: 10px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.links a {
+    color: #e1e1e3; /* White color for links */
+    text-decoration: none;
+    padding: 10px 25px;
+    margin: 10px;
+    background: #454547;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.links a:hover {
+    background: #555558;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+/* This will ensure any anchor links within paragraphs will also be white */
+p a {
+    color: #e1e1e3;
+    text-decoration: underline;
+    transition: text-decoration 0.3s ease;
+}
+
+p a:hover {
+    text-decoration: none;
+}
+
+/* General link styling */
+a {
+    color: #ffffff;  /* Making it white */
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline; /* Underlining on hover for emphasis */
+}
+
+/* Specific styling for the navigation bar/Table of Contents */
+nav a, section h3 + a {
+    color: #ffffff;
+}
+
+nav a:hover, section h3 + a:hover {
+    color: #b0b0b0; /* Slight shade change on hover for added effect */
+}
+
+/* Specific styling for links in the .links section */
+.links a {
+    color: #ffffff;
+    border: 1px solid #333;
+}
+
+.links a:hover {
+    color: #b0b0b0;
+    border-color: #555;
+}
+
+/* Table of Contents styling */
+/* Updated Table of Contents title styling */
+section h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3rem;  /* Adjust as needed */
+    margin-bottom: 20px;
+    text-transform: uppercase;  /* Making it uppercase */
+    position: relative;
+    display: inline-block;
+}
+
+section h3:after {
+    content: '';  /* Empty content */
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 3px;
+    width: 50px;  /* Adjust based on how long you want the line to be */
+    background-color: #b0b0b0;
+}
+
+
+section h3 + ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+section h3 + ul li {
+    margin-bottom: 15px;  /* Space between list items */
+}
+
+section h3 + ul a {
+    color: #ffffff;  /* White color */
+    padding: 5px 0;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 0.3s ease, color 0.3s ease;
+}
+
+section h3 + ul a:hover {
+    border-bottom-color: #b0b0b0; /* Adding an underline effect on hover */
+    color: #b0b0b0;
+}
+
+.date-container {
+    position: relative;
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center-align items vertically */
+    gap: 10px; /* Spacing between date and text */
+}
+
+.date-highlight {
+    background-color: #454547;          /* Darker background for contrast */
+    border: 1px solid #e1e1e1;          /* Light gray border */
+    border-radius: 5px;                 /* Slightly bigger rounded corners for smoothness */
+    padding: 3px 6px;                   /* Increased padding for a balanced look */
+    font-weight: bold;                  /* Bold text */
+    margin-right: 10px;                 /* Space after the date */
+    color: #e1e1e1;                     /* Light gray text color to match theme */
+    font-size: 0.9em;                   /* Slightly smaller font size */
+    display: inline-block;              /* To ensure padding and border-radius applies correctly */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow for a lifted look */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+    position: absolute; /* Absolute position the date */
+    left: 0; /* Align to the left of the container */
+    position: static; /* Revert to static positioning */
+    transform: none; /* Clear the translateY transform */
+}
+
+.date-text {
+    display: block; /* Ensure the text spans the entire width */
+}
+
+.date-highlight:hover {
+    transform: translateY(-2px); /* Only shift up slightly on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.experience-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.experience-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.year-highlight {
+    background-color: #454547;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    padding: 3px 6px;
+    font-weight: bold;
+    margin-right: 10px;
+    color: #e1e1e1;
+    font-size: 0.9em;
+    display: inline-block;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.year-highlight:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.company-highlight {
+    background-color: #e1e1e1;
+    border-radius: 3px;
+    padding: 2px 4px;
+    font-weight: bold;
+    color: #2d2f33;
+    font-size: 0.9em;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.company-highlight:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.experience-list p {
+    margin: 0;
+    padding-left: 30px; /* This offsets the description to align with the company name */
+}
+
+.patents-list {
+    list-style-type: none;              /* No bullet points */
+    padding: 0;                         /* No padding */
+}
+
+.patents-list li {
+    margin-bottom: 20px;               /* Space between items */
+}
+
+.patents-list strong {
+    color: #e1e1e1;                     /* Light gray text color for emphasis */
+    display: block;                    /* Makes the content beneath it drop to a new line */
+}
+
+.publications-list li {
+    padding-bottom: 20px; /* Adjust the value as needed */
+}
+
+.role-highlight {
+    background-color: #454547;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    padding: 3px 6px;
+    font-weight: bold;
+    margin-right: 10px;
+    color: #e1e1e1;
+    font-size: 0.9em;
+    display: inline-block;
+}
+
+.services-list > li {
+    padding-bottom: 20px; /* or adjust as required */
+}
+
+.services-list > li > ul > li {
+    margin-left: 25px;
+    list-style-type: disc; /* or use 'circle' if you prefer */
+}
+
+.role-highlight:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
