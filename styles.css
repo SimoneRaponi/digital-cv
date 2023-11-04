@@ -3,15 +3,15 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background: #e1e1e1; /* Subtle dark background */
-    color: #e1e1e1; /* Soft white text for readability */
+    background: #2d2f33; /* Subtle dark background */
+    color: #e1e1e3; /* Soft white text for readability */
 }
 
 .container {
     max-width: 1000px;
     margin: 50px auto;
     padding: 20px 30px;
-    background: #2B3856; /* A slightly lighter shade for content contrast */
+    background: #383a3f; /* A slightly lighter shade for content contrast */
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
@@ -229,7 +229,7 @@ section h3 + ul a:hover {
     border-radius: 3px;
     padding: 2px 4px;
     font-weight: bold;
-    color: #e1e1e1;
+    color: #2d2f33;
     font-size: 0.9em;
     display: inline-block;
     transition: background-color 0.3s ease;
