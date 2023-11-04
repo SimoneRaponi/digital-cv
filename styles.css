@@ -3,15 +3,15 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background: #2d2f33; /* Subtle dark background */
-    color: #e1e1e3; /* Soft white text for readability */
+    background: #e1e1e1; /* Subtle dark background */
+    color: #e1e1e1; /* Soft white text for readability */
 }
 
 .container {
     max-width: 1000px;
     margin: 50px auto;
     padding: 20px 30px;
-    background: #383a3f; /* A slightly lighter shade for content contrast */
+    background: #2B3856; /* A slightly lighter shade for content contrast */
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
@@ -24,7 +24,7 @@ header {
 .profile-pic {
     width: 188px;
     height: 274px;
-    border: 3px solid #e1e1e3; /* White border around the image */
+    border: 3px solid #e1e1e1; /* White border around the image */
     margin: 0 auto;
     display: block;
     transition: transform 0.3s ease;
@@ -44,7 +44,7 @@ h2 {
     font-size: 2rem;
     margin-top: 40px;
     margin-bottom: 20px;
-    border-bottom: 2px solid #e1e1e3;
+    border-bottom: 2px solid #e1e1e1;
     padding-bottom: 10px;
 }
 
@@ -56,7 +56,7 @@ h2 {
 }
 
 .links a {
-    color: #e1e1e3; /* White color for links */
+    color: #e1e1e1; /* White color for links */
     text-decoration: none;
     padding: 10px 25px;
     margin: 10px;
@@ -76,7 +76,7 @@ p {
 
 /* This will ensure any anchor links within paragraphs will also be white */
 p a {
-    color: #e1e1e3;
+    color: #e1e1e1;
     text-decoration: underline;
     transition: text-decoration 0.3s ease;
 }
@@ -229,7 +229,7 @@ section h3 + ul a:hover {
     border-radius: 3px;
     padding: 2px 4px;
     font-weight: bold;
-    color: #2d2f33;
+    color: #e1e1e1;
     font-size: 0.9em;
     display: inline-block;
     transition: background-color 0.3s ease;
